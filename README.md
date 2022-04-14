@@ -28,3 +28,6 @@
 + (강의) 트랜잭션 문제 해결 - 트랜잭션 매니저2
 + (강의) 트랜잭션 문제 해결 - 트랜잭션 템플릿
 + (강의) 트랜잭션 문제 해결 - 트랜잭션 AOP 이해, 적용, 정리
++ (정리) Spring DB : 커넥션 풀 (https://ojt90902.tistory.com/848)
++ (정리) Spring DB : 데이터 소스 (https://ojt90902.tistory.com/849)
++ (정리) Spring DB : 트랜잭션 개념(https://ojt90902.tistory.com/850)
