@@ -31,3 +31,4 @@
 + (정리) Spring DB : 커넥션 풀 (https://ojt90902.tistory.com/848)
 + (정리) Spring DB : 데이터 소스 (https://ojt90902.tistory.com/849)
 + (정리) Spring DB : 트랜잭션 개념(https://ojt90902.tistory.com/850)
++ (정리) Spring DB : 데이터베이스 연결 구조와 DB 세션(https://ojt90902.tistory.com/851)
