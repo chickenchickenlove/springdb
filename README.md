@@ -36,4 +36,5 @@
 + (정리) Spring DB : 자동 Commit / 수동 Commit (https://ojt90902.tistory.com/853)
 + (정리) Spring DB : 트랜잭션 실습 Commit (https://ojt90902.tistory.com/854)
 + (정리) Spring DB : 트랜잭션과 계좌이체 (https://ojt90902.tistory.com/855)
++ (정리) Spring DB : DB Lock 개념 (https://ojt90902.tistory.com/856)
 
