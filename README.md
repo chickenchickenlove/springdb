@@ -38,3 +38,5 @@
 + (정리) Spring DB : 트랜잭션과 계좌이체 (https://ojt90902.tistory.com/855)
 + (정리) Spring DB : DB Lock 개념 (https://ojt90902.tistory.com/856)
 
+## 22.04.15
++ (정리) Spring DB : 조회 시, DB Lock 설정  (https://ojt90902.tistory.com/858)
