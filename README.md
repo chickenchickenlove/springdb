@@ -26,18 +26,23 @@
 - 각 DB는 다른 방식으로 커넥션을 얻어야 했다. 따라서 OCP를 지키기 위해, 커넥션을 얻는 방법의 추상화가 필요하다. → </br>
 > DataSource는 각 DB의 Connection을 얻는 방식을 추상화했다. 어플리케이션은 DataSource 인터페이스에 의존만 하면 된다. 각 DB는 DataSource 구현체를 제공하고, 개발자는 이것을 사용하면 된다.
 
+
 - DriverManager는 매번 Connection을 얻어올 때 마다 설정 정보(DB URL, USER, Password)를 넘겨줘야한다. 즉, 설정과 사용을 동시에 한다. 이 부분의 분리가 필요하다.
 > DataSource는 초기에 단 한번 URL / USER / PASSWORD 정보를 넘긴다. 이후 datasource.getConnection()을 통해 커넥션을 가져오기만 하면 된다. 즉, 설정과 사용이 분리가 된다. 이것은 '설정'과 관련된 변경 포인트가 하나로 줄어드는 것을 의미한다. 
+
 
 - DriverManager 사용 시, 자원을 Release 할 때 많은 Try / Catch / If문이 필요했다. 이 부분의 개선이 필요하다. </br>
 > dataSource를 사용하면 JdbcUtils를 이용해 자원을 손쉽게 Release할 수 있다. JdbcUtils는 Try / Catch / If문의 추상화를 처리해준다. 
 
+
 - DataSource의 한계
 1. DriverManagerDataSource를 사용하면, 매번 요청할 때 마다 새로운 커넥션을 받아온다. 이 때, TCP/IP 통신을 매번 하기 때문에 비용이 비싸다. 이 부분의 개선이 필요하다. 
+</br>
 
 ## Connection Pool
 - DriverManagerDataSource를 사용하면, 매번 커넥션을 만들어서 사용했기 때문에 비용이 비쌌다. 이 부분의 해결이 필요한데, 기본적으로는 DataSource 인터페이스를 충실히 구현한 무언가가 필요했다. 
 > Connection Pool은 DataSource 인터페이스의 구현체다. 어플리케이션 실행 시점에 필요한만큼의 Connection을 생성해서 Pool에서 관리를 한다.
+
 
 - Connection Pool은 다음과 같이 동작한다
 1. Connection을 요청하면, Connection Pool에서 관리중인 커넥션을 전달한다. 이 때, 프록시 커넥션 객체를 하나 만들고 이 객체로 실제 커넥션을 한번 감싼 다음에 전달해준다. 
