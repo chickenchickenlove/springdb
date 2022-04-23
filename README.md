@@ -17,9 +17,9 @@
 - JDBC의 표준화 한계는 명확하다. 가장 일반적인 부분만 표준화 했기 때문에 DB의 세부적인 기능을 사용하게 되면, 다시 코드를 갈아엎어야 하는 상황이 발생한다. 예를 들어 페이징 기능을 사용한다고 가정하면, 각 DB가 제공하는 페이징 기능과 사용방법이 다르기 때문에 다시 한번 코드를 갈아엎어야 한다. 
 
 - JDBC만 사용했을 때 발생할 수 있는 문제점
-1. JDBC는 일반적인 부분만 표준화 했다. 따라서 페이징 기능 등의 세부 기능을 사용할 때, 코드의 수정이 필요해진다.
-2. JDBC는 DriverManager를 통해 필요할 때 마다 Connection을 받아온다. 이 때, 매번 TCP/IP를 맺어야 한다.
-3. JDBC의 Resource Release 과정에서 많은 Try / Catch / If문이 남발된다. 즉, 동일한 코드가 계속 반복되는 사태가 발생한다. 
+  1. JDBC는 일반적인 부분만 표준화 했다. 따라서 페이징 기능 등의 세부 기능을 사용할 때, 코드의 수정이 필요해진다.
+  2. JDBC는 DriverManager를 통해 필요할 때 마다 Connection을 받아온다. 이 때, 매번 TCP/IP를 맺어야 한다.
+  3. JDBC의 Resource Release 과정에서 많은 Try / Catch / If문이 남발된다. 즉, 동일한 코드가 계속 반복되는 사태가 발생한다. 
 
 
 ## DataSource
@@ -36,7 +36,7 @@
 
 
 - DataSource의 한계
-1. DriverManagerDataSource를 사용하면, 매번 요청할 때 마다 새로운 커넥션을 받아온다. 이 때, TCP/IP 통신을 매번 하기 때문에 비용이 비싸다. 이 부분의 개선이 필요하다. 
+  1. DriverManagerDataSource를 사용하면, 매번 요청할 때 마다 새로운 커넥션을 받아온다. 이 때, TCP/IP 통신을 매번 하기 때문에 비용이 비싸다. 이 부분의 개선이 필요하다. 
 </br>
 
 ## Connection Pool
@@ -45,9 +45,9 @@
 
 
 - Connection Pool은 다음과 같이 동작한다
-1. Connection을 요청하면, Connection Pool에서 관리중인 커넥션을 전달한다. 이 때, 프록시 커넥션 객체를 하나 만들고 이 객체로 실제 커넥션을 한번 감싼 다음에 전달해준다. 
-2. Connection을 요청했는데, 현재 가용할 수 있는 Connection이 없는 경우 Connection을 얻을 때까지 기다린다.
-3. Connection을 Close하면, Connection Pool에서 전달된 Connection은 자동으로 Connection Pool에 반환된다. 
+  1. Connection을 요청하면, Connection Pool에서 관리중인 커넥션을 전달한다. 이 때, 프록시 커넥션 객체를 하나 만들고 이 객체로 실제 커넥션을 한번 감싼 다음에 전달해준다. 
+  2. Connection을 요청했는데, 현재 가용할 수 있는 Connection이 없는 경우 Connection을 얻을 때까지 기다린다.
+  3. Connection을 Close하면, Connection Pool에서 전달된 Connection은 자동으로 Connection Pool에 반환된다. 
 
 
 
