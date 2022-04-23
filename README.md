@@ -1,6 +1,12 @@
 # Spring DB 접근 기술
 
 
+
+
+
+
+
+
 ## 22.04.12 
 + (강의) 커넥션 풀 이해
 + (강의) Data Source 이해
@@ -40,3 +46,8 @@
 
 ## 22.04.15
 + (정리) Spring DB : 조회 시, DB Lock 설정  (https://ojt90902.tistory.com/858)
+
+
+## 22.04.23
++ (강의) JDBC 이해 / JDBC와 최신 데이터 접근 기술 / DB 연결 / JDBC CRUD 개발
++ (강의) DataSource 예제 / 커넥션 풀 / DataSource 적용 
