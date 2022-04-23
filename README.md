@@ -95,3 +95,6 @@
 ## 22.04.23
 + (강의) JDBC 이해 / JDBC와 최신 데이터 접근 기술 / DB 연결 / JDBC CRUD 개발
 + (강의) DataSource 예제 / 커넥션 풀 / DataSource 적용 
++ (정리) Spring DB : JDBC / ORM의 필요성 정리(https://ojt90902.tistory.com/878)
++ (정리) Spring DB : 데이터베이스 연결 (https://ojt90902.tistory.com/879)
++ (정리) Spring DB : JDBC 개발 (https://ojt90902.tistory.com/880)
