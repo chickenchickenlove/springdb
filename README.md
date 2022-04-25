@@ -98,3 +98,7 @@
 + (정리) Spring DB : JDBC / ORM의 필요성 정리(https://ojt90902.tistory.com/878)
 + (정리) Spring DB : 데이터베이스 연결 (https://ojt90902.tistory.com/879)
 + (정리) Spring DB : JDBC 개발 (https://ojt90902.tistory.com/880)
+
+## 22.04.24
++ (정리) Spring DB : JDBC 개발 / 조회 / 수정 / 삭제 (https://ojt90902.tistory.com/880)
++ (정리) Spring DB : DataSource / Connection Pool 설정 및 적용(https://ojt90902.tistory.com/882)
