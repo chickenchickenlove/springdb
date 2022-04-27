@@ -110,3 +110,5 @@
 
 ## 22.04.27
 + (강의) 스프링과 문제 해결 → 체크 예외와 인터페이스 / 런타임 예외 적용 / 데이터 접근 예외 직접 만들기 / 스프링 예외 추상화 이해 / 스프링 예외 추상화 적용 / JDBC 반복 문제 해결 - JdbcTemplate
++ (정리) Spring DB : TranscationManager를 이용한 Transcation 추상화(https://ojt90902.tistory.com/863)
++ (정리) Spring DB : TransactionTemplate을 이용한 Transcation 부가 기능 처리(https://ojt90902.tistory.com/865)
