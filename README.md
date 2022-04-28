@@ -113,3 +113,10 @@
 + (정리) Spring DB : TranscationManager를 이용한 Transcation 추상화(https://ojt90902.tistory.com/863)
 + (정리) Spring DB : TransactionTemplate을 이용한 Transcation 부가 기능 처리(https://ojt90902.tistory.com/865)
 + (정리) Spring DB : @Transactional을 이용한 관심사 분리(https://ojt90902.tistory.com/866)
+
+## 22.04.28
++ (정리) Spring DB : 스프링부트와 자동 리소스 등록(https://ojt90902.tistory.com/867)
++ (정리) Spring DB : 체크 예외 / 언체크 예외(https://ojt90902.tistory.com/883)
++ (정리) Spring DB : 체크 예외 / 언체크 예외 활용(https://ojt90902.tistory.com/885)
++ (정리) Spring DB : 예외 포함과 StackTrace(https://ojt90902.tistory.com/887)
++ (정리) Spring DB : 스프링과 문제 해결, 예외처리 / 반복(https://ojt90902.tistory.com/888)
