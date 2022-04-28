@@ -61,12 +61,11 @@ public class MemberRepositoryV4_1 implements MemberRepository{
     public Member findById(String memberId){
         String sql = "select * from member where member_id = ?";
 
-
         PreparedStatement pstmt = null;
         ResultSet rs = null;
 
         try {
-            // 트랜잭션 매니저 사용
+
             Connection conn = getConnection();
             pstmt = conn.prepareStatement(sql);
             pstmt.setString(1, memberId);

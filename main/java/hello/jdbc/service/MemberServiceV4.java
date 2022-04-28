@@ -10,8 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.sql.SQLException;
 
 /**
- * @Transcational
- * : Spring Transaction AOP를 이용한 관심사 분리
+ * DB의 예외누수 해결
  */
 
 @RequiredArgsConstructor
