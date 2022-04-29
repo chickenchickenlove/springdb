@@ -120,3 +120,6 @@
 + (정리) Spring DB : 체크 예외 / 언체크 예외 활용(https://ojt90902.tistory.com/885)
 + (정리) Spring DB : 예외 포함과 StackTrace(https://ojt90902.tistory.com/887)
 + (정리) Spring DB : 스프링과 문제 해결, 예외처리 / 반복(https://ojt90902.tistory.com/888)
+
+## 22.04.29
++ (정리) Spring DB : 데이터 접근 예외 직접 만들어보기(https://ojt90902.tistory.com/890)
