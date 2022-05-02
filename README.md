@@ -123,3 +123,7 @@
 
 ## 22.04.29
 + (정리) Spring DB : 데이터 접근 예외 직접 만들어보기(https://ojt90902.tistory.com/890)
+
+## 22.05.02
++ (정리) Spring DB : Spring의 예외 추상화 + 이해(https://ojt90902.tistory.com/891)
++ (정리) Spring DB : JdbcTemplate을 이용한 반복 문제 해결(https://ojt90902.tistory.com/893)
